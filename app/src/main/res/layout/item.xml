@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#CFCFCF"
+    android:id="@+id/item_film">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardMaxElevation="2dp"
+            app:cardElevation="1dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_album"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Judul"
+            android:textColor="#000"
+            android:layout_below="@+id/cv_img" />
+
+        <TextView
+            android:id="@+id/tv_channel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="YTChannel"
+            android:layout_below="@+id/tv_judul"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imgBtn_3dot"
+            android:src="@drawable/threedot"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:background="#00FFFFFF"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_judul"
+            android:layout_below="@id/cv_img"/>
+
+    </RelativeLayout>
+</LinearLayout>

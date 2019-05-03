@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">YTLayout</string>
+    
+    <string-array name="array">
+        <item>Playlist (A-Z)</item>
+        <item>Playlist (Recently Added)</item>
+    </string-array>
+</resources>
